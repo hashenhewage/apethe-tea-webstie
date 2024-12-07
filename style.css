@@ -1,52 +1,75 @@
+/* google font*/
 
+*{
 
-
-* {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: "popins",sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
-body {
-    min-height: 100vh;
-    background:url(E:\ape the webite materials) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+/*variables*/
+:root{
+    --main-color:white;
+    --second-color:green;
+    --text-color:blue;
+    --bg-color:yellow;
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
+img{
+
     width: 100%;
-    padding: 20px 100px;
-    background-color: #50B498;
+}
+body{
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
     justify-content: space-between;
-    align-items:normal;
-    z-index: 100;
+    align-items:center ;
+    padding: 18px 100px;
+    transition:  0.5s linear;
+    background: var(--text-color);
 
 }
+.logo img{
+    width: 60px;
 
-.logo {
+}
+.navbar{
     display: flex;
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
-    font-weight: 7000;
-    align-items: center;
-    
-
-
 }
-
 .navbar a{
-    
-    display: flex;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
+    paddidng: 8px 17px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform: uppercase;
     font-weight: 500;
-    text-decoration: none;
-    text-align:center;
+}
+.navbar a:hover {
+    background: var(--main-color);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+.header-icon{
+    font-size: 22px ;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
 }
 
+.header-icon  .bx{
+    color: var(--bg-color);
+}
+.header-icon .bx:hover {
+    color: var(--bg-color);
+}
