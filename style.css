@@ -1,0 +1,52 @@
+
+
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "popins",sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background:url(E:\ape the webite materials) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #50B498;
+    justify-content: space-between;
+    align-items:normal;
+    z-index: 100;
+
+}
+
+.logo {
+    display: flex;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 7000;
+    align-items: center;
+    
+
+
+}
+
+.navbar a{
+    
+    display: flex;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    text-align:center;
+}
+
