@@ -275,13 +275,27 @@ button:hover {
   --color-bg: #0d3029;
   --grad-bright: linear-gradient(-55deg, #8fc2c9 0%, #bee0e5 100%);
   --grad-dark: linear-gradient(-55deg, #248391 0%, #8fc2c9 100%);
-  --fig-width: 580px;
+  --fig-width: 540px;
   --fig-height: 660px;
   --delay-base: 550ms;
   --delay-added: 100ms;
   --acc-back: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+.imagepara{
+    display: flex;
+    justify-content: center; /* Center the middle object horizontally */
+    align-items: center;    /* Align items vertically in the container */
+    position: relative;
+    height: 100px; 
+    color: #f6f3ef;
+    margin-left: auto;
+
+
+}
 *,
 *:before,
 *:after{
@@ -294,16 +308,19 @@ button:hover {
   align-items: center;
   width: 100vw; height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 0px;    /* changed  0*/  
   background: var(--color-bg);
-  display: flex;
-  align-items: center;
+  gap: 180px;
+  
+  align-items:center ;
   justify-content: center;
   
 }
 
 .imageproduct{
   display: flex;
+  align-items: center;
+  justify-content: center;
   align-items: center;
   bottom: 50px;
   width: 100%;
@@ -315,9 +332,27 @@ button:hover {
   opacity: 0;
   transform: skewY(1deg);
 }
+.para1{
+    display: flex;
+    align-content: flex-start;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: italic;
+    line height: 2px;
+
+    color: #f6f3ef;
+}
 
 figure{
   display: flex;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
 
   position: relative;
   width: var(--fig-width);
